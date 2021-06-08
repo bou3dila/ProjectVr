@@ -2382,10 +2382,40 @@ adjust-sourcemap-loader@2.0.0:
     object-path "0.11.4"
     regex-parser "2.2.10"
 
+aframe-event-set-component@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/aframe-event-set-component/-/aframe-event-set-component-5.0.0.tgz#6b855605de5097f713a7adcb0c6e371322efb5fd"
+  integrity sha512-O9Bhs8Qu2cEilXQ6F2xUxxJIbaZEA2atdIxTwq5qPHRHaIa+8ZghkirUBicNs92aHR9QQwk6ZnRx+SmBXi+B9Q==
+  dependencies:
+    debug "^2.6.9"
+
+aframe-extras@^6.1.0:
+  version "6.1.1"
+  resolved "https://registry.yarnpkg.com/aframe-extras/-/aframe-extras-6.1.1.tgz#6f158b6c4da12e77d00fd0b97dfe1c72245327df"
+  integrity sha512-w3o3sKfQG+cwe1ZoKUxvMLehh0D/MlvFZeg2XuyIto+Nrs/kGLPcb/fsI5DXM4jociZ3wVQfqcA1BVF+0Nq45A==
+  dependencies:
+    three-pathfinding "^0.7.0"
+
 aframe-particle-system-component@^1.1.3:
   version "1.1.3"
   resolved "https://registry.yarnpkg.com/aframe-particle-system-component/-/aframe-particle-system-component-1.1.3.tgz#9d05732fab223e8c4392d20ae47bb29fa97067e9"
   integrity sha512-G1qmdre8mrbLTw67jNUr79IRFXxL+Rt++LFC1enhNHFoiyqgvcLsSWJLYhoVdEpTyvM39b1VMM7RjivpW4oBsg==
+
+aframe-physics-extras@^0.1.3:
+  version "0.1.3"
+  resolved "https://registry.yarnpkg.com/aframe-physics-extras/-/aframe-physics-extras-0.1.3.tgz#803e2164fb96c0a80f2d1a81458f3277f262b130"
+  integrity sha512-wTzGXQK+C8CobIvgBY9CXl2Bb5H+STjlJLnqo2p47M2pHAMjsML9Kb2XWIb73quFKoChqJpUn2kZKxodAKzt/g==
+
+aframe-physics-system@^4.0.1:
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/aframe-physics-system/-/aframe-physics-system-4.0.1.tgz#8cef7bd2b62088ef0e6a1757929fbebe727fc435"
+  integrity sha512-KzgWd9sCdxI+bbLNwHHIkXMDH9Z8G/w3l4z2cfdbM0JusQ5giHMq/ONVmLJXNm1YZyE+QSfsE+YwjCLnJyE25w==
+  dependencies:
+    ammo-debug-drawer "github:infinitelee/ammo-debug-drawer"
+    cannon "github:donmccurdy/cannon.js#v0.6.2-dev1"
+    three-to-ammo "github:infinitelee/three-to-ammo"
+    three-to-cannon "^1.3.0"
+    webworkify "^1.4.0"
 
 aframe-react@^4.4.0:
   version "4.4.0"
@@ -2442,6 +2472,11 @@ alphanum-sort@^1.0.0:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/alphanum-sort/-/alphanum-sort-1.0.2.tgz#97a1119649b211ad33691d9f9f486a8ec9fbe0a3"
   integrity sha1-l6ERlkmyEa0zaR2fn0hqjsn74KM=
+
+"ammo-debug-drawer@github:infinitelee/ammo-debug-drawer":
+  version "1.0.1"
+  uid "561fd698109e61456f34136a53dd08b45d4ad9ca"
+  resolved "https://codeload.github.com/infinitelee/ammo-debug-drawer/tar.gz/561fd698109e61456f34136a53dd08b45d4ad9ca"
 
 an-array@^1.0.0:
   version "1.0.0"
@@ -3308,6 +3343,11 @@ caniuse-lite@^1.0.30001023:
   resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001025.tgz#30336a8aca7f98618eb3cf38e35184e13d4e5fe6"
   integrity sha512-SKyFdHYfXUZf5V85+PJgLYyit27q4wgvZuf8QTOk1osbypcROihMBlx9GRar2/pIcKH2r4OehdlBr9x6PXetAQ==
 
+"cannon@github:donmccurdy/cannon.js#v0.6.2-dev1":
+  version "0.6.2"
+  uid "022e8ba53fa83abf0ad8a0e4fd08623123838a17"
+  resolved "https://codeload.github.com/donmccurdy/cannon.js/tar.gz/022e8ba53fa83abf0ad8a0e4fd08623123838a17"
+
 capture-exit@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/capture-exit/-/capture-exit-2.0.0.tgz#fb953bfaebeb781f62898239dabb426d08a509a4"
@@ -4128,8 +4168,9 @@ debug@^4.0.1, debug@^4.1.0, debug@^4.1.1:
   dependencies:
     ms "^2.1.1"
 
-"debug@github:ngokevin/debug#noTimestamp":
+debug@ngokevin/debug#noTimestamp:
   version "2.2.0"
+  uid ef5f8e66d49ce8bc64c6f282c15f8b7164409e3a
   resolved "https://codeload.github.com/ngokevin/debug/tar.gz/ef5f8e66d49ce8bc64c6f282c15f8b7164409e3a"
 
 decamelize@^1.2.0:
@@ -4343,8 +4384,9 @@ doctrine@^3.0.0:
   dependencies:
     esutils "^2.0.2"
 
-"document-register-element@github:dmarcos/document-register-element#8ccc532b7f3744be954574caf3072a5fd260ca90":
+document-register-element@dmarcos/document-register-element#8ccc532b7f3744be954574caf3072a5fd260ca90:
   version "0.5.4"
+  uid "8ccc532b7f3744be954574caf3072a5fd260ca90"
   resolved "https://codeload.github.com/dmarcos/document-register-element/tar.gz/8ccc532b7f3744be954574caf3072a5fd260ca90"
 
 dom-converter@^0.2:
@@ -7348,9 +7390,9 @@ memory-fs@^0.5.0:
     readable-stream "^2.0.1"
 
 merge-deep@^3.0.2:
-  version "3.0.2"
-  resolved "https://registry.yarnpkg.com/merge-deep/-/merge-deep-3.0.2.tgz#f39fa100a4f1bd34ff29f7d2bf4508fbb8d83ad2"
-  integrity sha512-T7qC8kg4Zoti1cFd8Cr0M+qaZfOwjlPDEdZIIPPB2JZctjaPM4fX+i7HOId69tAti2fvO6X5ldfYUONDODsrkA==
+  version "3.0.3"
+  resolved "https://registry.yarnpkg.com/merge-deep/-/merge-deep-3.0.3.tgz#1a2b2ae926da8b2ae93a0ac15d90cd1922766003"
+  integrity sha512-qtmzAS6t6grwEkNrunqTBdn0qKwFgNWvlxUbAV8es9M7Ot1EbyApytCnvE0jALPa46ZpKDUo527kKiaWplmlFA==
   dependencies:
     arr-union "^3.1.0"
     clone-deep "^0.2.4"
@@ -10940,8 +10982,9 @@ text-table@0.2.0, text-table@^0.2.0:
   resolved "https://registry.yarnpkg.com/text-table/-/text-table-0.2.0.tgz#7f5ee823ae805207c00af2df4a84ec3fcfa570b4"
   integrity sha1-f17oI66AUgfACvLfSoTsP8+lcLQ=
 
-"three-bmfont-text@github:dmarcos/three-bmfont-text#1babdf8507c731a18f8af3b807292e2b9740955e":
+three-bmfont-text@dmarcos/three-bmfont-text#1babdf8507c731a18f8af3b807292e2b9740955e:
   version "2.3.0"
+  uid "1babdf8507c731a18f8af3b807292e2b9740955e"
   resolved "https://codeload.github.com/dmarcos/three-bmfont-text/tar.gz/1babdf8507c731a18f8af3b807292e2b9740955e"
   dependencies:
     array-shuffle "^1.0.1"
@@ -10957,6 +11000,21 @@ three-buffer-vertex-data@dmarcos/three-buffer-vertex-data#69378fc58daf27d3b1d930
   resolved "https://codeload.github.com/dmarcos/three-buffer-vertex-data/tar.gz/69378fc58daf27d3b1d930df9f233473e4a4818c"
   dependencies:
     flatten-vertex-data "^1.0.0"
+
+three-pathfinding@^0.7.0:
+  version "0.7.0"
+  resolved "https://registry.yarnpkg.com/three-pathfinding/-/three-pathfinding-0.7.0.tgz#bf64ec409bee6e7d8e19be96c7b40ebd7ef6f10d"
+  integrity sha512-UwWvzgio1UFe81n5jKHNzB4B+AG3wfZ54OKp7bTb1MHuC3cy6RTtr0dbbiPQQoqxzr+DRArR2DUwQSEknw5+nw==
+
+"three-to-ammo@github:infinitelee/three-to-ammo":
+  version "1.0.0"
+  uid a15da9afc16b834f6c1906ab94e0ab3071e9ff09
+  resolved "https://codeload.github.com/infinitelee/three-to-ammo/tar.gz/a15da9afc16b834f6c1906ab94e0ab3071e9ff09"
+
+three-to-cannon@^1.3.0:
+  version "1.4.1"
+  resolved "https://registry.yarnpkg.com/three-to-cannon/-/three-to-cannon-1.4.1.tgz#37e44eb40a83089ab7fe4821d5dc9ce7aa147e49"
+  integrity sha512-AhaDXAqRg48wYBjMGo/Nxl0o67sW4/nGN3yIIfxMkQwL5nYLaLVnkz6aQNpn1vNNKuqHhqLFCZR7qSnSXzhhog==
 
 throat@^4.0.0:
   version "4.1.0"
@@ -11552,6 +11610,11 @@ webvr-polyfill@^0.10.10:
   integrity sha512-mzTuMpC3W/aKmm5QxYtTzXAxhVo3tR4c0D5Kihk8Q38GVxiCOvS4Ga4LBN8CsFVpXu1WkGeuf/hMzF75iWYiyA==
   dependencies:
     cardboard-vr-display "^1.0.18"
+
+webworkify@^1.4.0:
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/webworkify/-/webworkify-1.5.0.tgz#734ad87a774de6ebdd546e1d3e027da5b8f4a42c"
+  integrity sha512-AMcUeyXAhbACL8S2hqqdqOLqvJ8ylmIbNwUIqQujRSouf4+eUFaXbG6F1Rbu+srlJMmxQWsiU7mOJi0nMBfM1g==
 
 whatwg-encoding@^1.0.1, whatwg-encoding@^1.0.3, whatwg-encoding@^1.0.5:
   version "1.0.5"
